@@ -1,0 +1,24 @@
+.section1 {
+    height: 100vh;
+    position: relative;
+    background:black;
+  }
+  
+  .btnDiv {
+    position: absolute;
+    top: 100px;
+    right: 50px; /* optional: add this to ensure it's not off-screen */
+    z-index: 10; /* optional: ensures it shows above the canvas */
+  }
+  
+  .btn {
+    background: #C4CDFB; /* ✅ Remove quotes */
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
