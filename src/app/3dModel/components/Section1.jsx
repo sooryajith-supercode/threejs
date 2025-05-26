@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import React, { useState } from 'react'
 import * as styles from "../css/animation.module.css"
 import { Center, Environment, OrbitControls } from '@react-three/drei'
-import { Shoe } from '@/app/Models/Shoe'
+import { invalidate } from '@react-three/fiber'
 
 
 export default function Section1() {
@@ -21,7 +21,7 @@ export default function Section1() {
     return (
         <>
             <section className={styles?.section1}>
-                <Canvas  dpr={[1, 1.5]} frameloop='demand'>
+                <Canvas  dpr={[1, 1.5]} >
                     <Center>
                         <ambientLight  color="#8FEEFF"/>
                         <directionalLight position={[1, 0, 5]} color="white" />
