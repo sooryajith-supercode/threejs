@@ -42,6 +42,14 @@ export default function Section1() {
                        {useBasic ? "Use Standard Material" :"Use Basic Material"}
                     </button>
                 </div>
+                <div className={styles?.contentDiv}>  
+                    <div className={styles?.textContent}>
+                        <p>This 3d model is optimized using gltfjsx .<br/>
+                           command:npx gltfjsx (your .glb or .gltf file path) -S -T -t .
+                           Helps to reduce the file size to 80% to 90%.
+                           </p>
+                    </div>
+                </div>
             </section>
         </>
     )
