@@ -8,7 +8,7 @@
     const { nodes, materials } = useGLTF('/assets/Cloud.glb')
     useFrame(() => {
         if (rotate && cloudRef.current) {
-        cloudRef.current.rotation.y += 0.01; // rotation speed
+        cloudRef.current.rotation.y += 0.01; 
         }
     });
     return (
@@ -27,7 +27,6 @@
             <meshStandardMaterial color="skyblue" metalness={0.4} roughness={0.3} />
             }
            
-            
         </mesh>
         </group>
     )

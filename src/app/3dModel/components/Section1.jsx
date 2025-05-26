@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import React, { useState } from 'react'
 import * as styles from "../css/animation.module.css"
 import { Center, Environment, OrbitControls } from '@react-three/drei'
+import { Shoe } from '@/app/Models/Shoe'
 
 
 export default function Section1() {
@@ -20,13 +21,14 @@ export default function Section1() {
     return (
         <>
             <section className={styles?.section1}>
-                <Canvas>
+                <Canvas  dpr={[1, 1.5]} frameloop='demand'>
                     <Center>
                         <ambientLight  color="#8FEEFF"/>
                         <directionalLight position={[1, 0, 5]} color="white" />
                         <directionalLight position={[1, 1, 1]} color="white" />
                         <pointLight color="red" intensity={5} />
                         <Cloud rotate={rotate} useBasic={useBasic} />
+                        
                         {/* <axesHelper args={[3]}/> */}
                     </Center>
                     <OrbitControls autoRotate={false} enableDamping={false} enableZoom={false}/>

@@ -7,12 +7,12 @@
   .btnDiv {
     position: absolute;
     top: 100px;
-    right: 50px; /* optional: add this to ensure it's not off-screen */
-    z-index: 10; /* optional: ensures it shows above the canvas */
+    right: 50px; 
+    z-index: 10;
   }
   
   .btn {
-    background: #C4CDFB; /* ✅ Remove quotes */
+    background: #C4CDFB; 
     width: 200px;
     display: inline-block;
     padding: 10px;
@@ -22,3 +22,8 @@
     font-weight: bold;
   }
   
+  .section2 {
+    height: 100vh;
+    position: relative;
+    background:white;
+  }
