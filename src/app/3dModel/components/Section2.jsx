@@ -7,7 +7,7 @@ import { OrbitControls } from '@react-three/drei'
 import { Cloud } from '@/app/Models/Cloud'
 export default function Section2() {
   return (
-    <section className={styles.section2}>
+    <section className={styles.section2} id='draco'>
       <Canvas dpr={[1, 1.5]} frameloop='demand'>
         <ambientLight/>
         <Shoe/>
